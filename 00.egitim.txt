@@ -1,47 +1,19 @@
-# hvl-adm-egitim
-Havelsan Admin Egitim ve Sinav Icerikleri
 
-Icindekiler :
-***
-
-## 1. Linux ve Network Egitimi
-
-### 1.1. Temel Linux Egitimi
-
-#### 1.1.1. Genel Linux Tanitimi
-
-#### 1.1.2. Temel Dosya Komutlari 
-     ( ls, touch, cat, split)
-
-#### 1.1.3. Temel Bash Komutlari 
-     ( > >> pipe, terminal controls : CTRL+A,E,Q,R,W, sort, grep,wak, uniq, wc, xargs (rm example))
-
-#### 1.1.4. Temel Disk/Yedekleme/Zipleme Komutlari 
-     ( df, du, tar, gzip, bzip2, gunzip) 
-
-#### 1.1.5. Temel Linux Bilgi Edinim Komutlari 
-     (uname,  cat /etc/redhat-release, cat /etc/*rel*, hostname,  whoami, which, ip addr show, uptime, date)
-
-#### 1.1.6. Temel Dosya Indirme Komutlari
-     (wget, curl
-
-#### 1.1.7. VI
-
-#### 1.1.8. Paket Yoneticileri
-     rpm: yum, createrepo, dnf,rpm 
-     deb: apt, dpkg
-
-### 1.2. Linux Ortam Degiskenleri 
-    USER, LD_LIBRARY_PATH, LIBRARY_PATH, PATH, CLASSPATH, export, .bashrc, .bash_profile, /etc/profiled.d,
-
-### 1.3. Linux Filesystems 
-    fstab, xfs, ext4, nfs, cifs, fsck, partioning, parted/gparted, encrypted file system, lvm, raid, veri kurtarma ve wipe etme.
-
-### 1.4. 
+KURALLAR :
+A :   Butun bolumler/egitimler sunum seklinde hazirlanacaktir.
+B :   Her teorik sunum sayfasindan sonra, bir de gercek hayatta kullanim örnegi slayt sayfasi olacaktir.
+C :   Her Egitim sonrasi word/openoffice doc/odt olarak 40 adet sinav sorusu hazirlanacaktir ( asagidaki her bir satir bir egitimdir)
 
 
-1.3. Temel Network Egitimi 
+0. SOZLUK : ADVENT/GENESIS KISALTMALARI ve DENIZCILIK TERIMLERI ( FAT,HAT, .., ALARGA, LUMBARAĞZI, KÖPRÜÜSTÜ, ...)
+
+
+1. Linux ve Network Egitimi 
+1.1. Temel Linux Egitimi ( HvmAdm + vi + df , du, uname, cat /etc/redhat-release, cat /etc/*rel*,  > >> pipe, terminal controls : CTRL+A,E,Q,R,W,  hostname/whoami commands, yum/createrepo, download commands: wget, curl, cut, sort, grep, awk, uniq, wc, xargs (rm a file type),  tar, gzip, gunzip, split, cat,date, uptime, hostname, which)
+1.2  Linux Ortam değişkenleri : USER, LD_LIBRARY_PATH, LIBRARY_PATH, PATH, CLASSPATH, export, .bashrc, .bash_profile, /etc/profiled.d, 
+1.3. Temel Network Egitimi
 1.4. Temel Network Switch Egitimi ( Bir makinenin baðlý olduðu switch bacak numarasýný bulma, VLAN ayarlarý, Multicast ayarlarý, Promiscous Mode, minicom ile seriden bağlanma, inter vlan routing)
+1.5. Linux filesystems : fstab, xfs, ext4, nfs, cifs, fsck, partioning, parted/gparted, encrypted file system, lvm, raid, veri kurtarma ve wipe etme.
 1.6. Linux Network Ayarlari ve Izleme ve Olcme (/etc/system/network-config, ip command, ethtool command, ping command, lspci+messages+ethtool, hosts, nslookup, dig, dns, host -l .,  NMCLI, MACVLAN,  IP , TCPDUMP, WIRESHARK, IPERF, Netcat, Nmap, ssh uzerinden komut calistirma, iptables ve routing , traceroute, VPN (sunucu-istemci ayarlari), tc(basic command examples)  ) Egitimi
 1.7. Linux Servisler ve Ayarlari Egitimi (SYSTEMD (systemctl), SSHD, CHRONYD, HTTPD, NAMED, DHCPD, TFTPD, mysqld (multi) , mongod, postgresql, ntp (+nma), chronyd (chronyc sources), openldap, rsyslogd, sendmail )
 1.8. Linux Debug Tools Egitimi ( JMissionControl, jvisualvm, health center,  GDB ve corelarin yapisi, STRACE, PS options, TOP options, lsof,netstat, iftop, loglarin yeri, lsusb, lsmod, lspci, dmesg, var/log/messages, readelf, so yapisi, ldd -r, strings, valgrind, electricfence, LLVM )
