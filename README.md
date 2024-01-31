@@ -4,179 +4,156 @@ Havelsan Admin Egitim ve Sinav Icerikleri
 Icindekiler :
 ***
 
-## 1. Linux ve Network Egitimi
+
+## 0. Temel Network Egitimi
+
+### [0.0. Temel Kuramsal Ag Egitimi](./egitimler/0.0.TemelKuramsalAgEgitimi)
+    TOPOLOJI, OSI, ETHERNET(CAT-5-6-7)/FIBER, IP, NETMASK, A-B-C CLASSES, GATEWAY, ROUTING, VLAN, MULTICASTING, 
+
+### [0.1. Temel Ag Anahtari Egitimi](./egitimler/0.1.TemelAgAnahtariEgitimi)
+   ( Bir makinenin bagli oldugu switch bacak numarasini bulma, VLAN ayarlari, Multicast ayarlari, Promiscous Mode, minicom ile seriden bağlanma, inter vlan routing)
+   error counts
+
+## 1. Linux Egitimi
 
 ### 1.1. Temel Linux Egitimi
 
-#### 1.1.1. Genel Linux Tanitimi
+#### [1.1.1. Genel Linux Tanitimi](./egitimler/1.1.1.GenelLinuxTanitimi)
 
-#### 1.1.2. Temel Dosya Komutlari 
-     ( ls, touch, cat, split)
+#### [1.1.2. Temel Dosya Komutlari](./egitimler/1.1.2.TemelDosyaKomutlari)
+     ( ls, touch, cat, split, find, lsof, bir dosyaya erisen proseslerin listesi)
 
-#### 1.1.3. Temel Bash Komutlari 
-     ( > >> pipe, terminal controls : CTRL+A,E,Q,R,W, sort, grep,wak, uniq, wc, xargs (rm example))
+#### [1.1.3. Temel Bash Komutlari ](./egitimler/1.1.3.TemelBashKomutlari)
+     ( > >> pipe, terminal controls : CTRL+A,E,Q,R,W, sort, for, grep,awk, uniq, wc, xargs (rm example))
 
-#### 1.1.4. Temel Disk/Yedekleme/Zipleme Komutlari 
+#### [1.1.4. Temel Disk/Yedekleme/Zipleme Komutlari ](./egitimler/1.1.4.TemelDiskYedeklemeZiplemeKomutlari)
      ( df, du, tar, gzip, bzip2, gunzip) 
 
-#### 1.1.5. Temel Linux Bilgi Edinim Komutlari 
+#### [1.1.5. Temel Linux Bilgi Edinim Komutlari ](./egitimler/1.1.5.TemelLinuxBilgiEdinimKomutlari)
      (uname,  cat /etc/redhat-release, cat /etc/*rel*, hostname,  whoami, which, ip addr show, uptime, date)
 
-#### 1.1.6. Temel Dosya Indirme Komutlari
-     (wget, curl
+#### [1.1.6. Temel Dosya Indirme Komutlari](./egitimler/1.1.6.TemelDosyaIndirmeKomutlari)
+     (wget, curl, scp)
 
-#### 1.1.7. VI
-
-#### 1.1.8. Paket Yoneticileri
+#### [1.1.7. VI](./egitimler/1.1.7.VI)
+     NO VI = NO LINUX
+     insert mode, escape mode, copy one-or-more lines, paste, delete/cut line/one character/to the end of line , append to line, go to line head, go to 0. line, go to end of file, search for string, find and replace, redo(.) the last action.
+ 
+#### [1.1.8. Paket Yoneticileri](./egitimler/1.1.8.PaketYoneticileri)
      rpm: yum, createrepo, dnf,rpm 
      deb: apt, dpkg
 
-### 1.2. Linux Ortam Degiskenleri 
-    USER, LD_LIBRARY_PATH, LIBRARY_PATH, PATH, CLASSPATH, export, .bashrc, .bash_profile, /etc/profiled.d,
+### [1.2. Linux Ortam Degiskenleri ](./egitimler/1.2.LinuxOrtamDegiskenleri)
+    USER, LD_LIBRARY_PATH, LIBRARY_PATH, PATH, CLASSPATH, PYTHONPATH, export, .bashrc, .bash_profile, /etc/profiled.d,
 
-### 1.3. Linux Filesystems 
+### [1.3. Linux Filesystems ](./egitimler/1.3.LinuxFilesystems)
     fstab, xfs, ext4, nfs, cifs, fsck, partioning, parted/gparted, encrypted file system, lvm, raid, veri kurtarma ve wipe etme.
 
-### 1.4. 
+### 1.4. Linux Network
 
+#### [1.4.0. Linux Network Temel Sorgu Komutlari ](./egitimler/1.4.0.LinuxNetworkTemelSorguKomutlari)
+     (ping, ip command, ethtool command, cat /proc/net/bonding/*, lspci+messages+ethtool, nmcli, macvlan, traceroute, dig, nslookup, host -l ., iperf, nmap, netcat, netstat, lsof, iftop)
+      ssh uzerinden komut calistirma
+ 
+#### [1.4.1. Linux Network Temel Ayarlari](./egitimler/1.4.1.LinuxNetworkTemelAyarlari)
+     (/etc/system/network-config, /etc/udev/rules.d,  ip command, ethtool command, bonding ayarlari, lspci+messages+ethtool, nmcli, macvlan )
+ 
+#### [1.4.2. Linux Network Paket Yonlendirme ve Ince Ayarlar](./egitimler/1.4.2.LinuxNetworkPaketYonlendirmeveInceAyarlar)
+      iptables ve routing ,  VPN (sunucu-istemci ayarlari), tc(basic command examples)
 
-1.3. Temel Network Egitimi 
-1.4. Temel Network Switch Egitimi ( Bir makinenin baðlý olduðu switch bacak numarasýný bulma, VLAN ayarlarý, Multicast ayarlarý, Promiscous Mode, minicom ile seriden bağlanma, inter vlan routing)
-1.6. Linux Network Ayarlari ve Izleme ve Olcme (/etc/system/network-config, ip command, ethtool command, ping command, lspci+messages+ethtool, hosts, nslookup, dig, dns, host -l .,  NMCLI, MACVLAN,  IP , TCPDUMP, WIRESHARK, IPERF, Netcat, Nmap, ssh uzerinden komut calistirma, iptables ve routing , traceroute, VPN (sunucu-istemci ayarlari), tc(basic command examples)  ) Egitimi
-1.7. Linux Servisler ve Ayarlari Egitimi (SYSTEMD (systemctl), SSHD, CHRONYD, HTTPD, NAMED, DHCPD, TFTPD, mysqld (multi) , mongod, postgresql, ntp (+nma), chronyd (chronyc sources), openldap, rsyslogd, sendmail )
-1.8. Linux Debug Tools Egitimi ( JMissionControl, jvisualvm, health center,  GDB ve corelarin yapisi, STRACE, PS options, TOP options, lsof,netstat, iftop, loglarin yeri, lsusb, lsmod, lspci, dmesg, var/log/messages, readelf, so yapisi, ldd -r, strings, valgrind, electricfence, LLVM )
-1.9. Temel VMWare ESX egitimi (sanal makine,kurulum, switch konfigürasyonu, e1000e)
-1.10. Temel Bash Script Egitimi
+#### [1.4.3. Linux Network Izleme](./egitimler/1.4.3.LinuxNetworkIzleme)
+      tcpdump, wireshark
 
-1.12 Linux boot egitimi : dracut, moduller, vmlinuz, initrd, grub config, boot parameters, pxe boot, bios, uefi
-1.13 Temel Linux Device Config ve kernel modules (insmod,rmmod, modprobe, dmidecode, blacklists,  seriden veri okuma, minicom)  Egitimi
-1.14 Temel Linux GUI Config Egitimi ( Xorg / Xinit / Gnome / XFCE )
-1.15 Temel Java Runtime Egitimi ( CLASSPATH, java -jar ile clistirma, LD_LIBRARY_PATH, -Djava.library.path, -Xmx, -Xms, ...)
-1.16 Temel Java App Server egitimi ( Tomcat ve ayarlari ) 
-1.17 Temel Mysql egitimi ( start/stop db, create/drop/show databses, show tables, privileges, import sql, basic sql : select, insert, primary key, uniq , data types, autoincrement )
-1.18 Temel Postgresql egitimi
-1.19 Temel Docker egitimi
-1.20 Temel Ansible egitimi.
-1.21 Video komutları : vlc, ffmpeg, gstreamer (gemide kullanım örneklerini okan abi ve osmandan ogrensinler)
-1.22 Temel Mesajlasma Sistemleri : DDS, Kafka+config, 
-1.23 In Memory Databases : Redis, Aerospike, Cassandra, memcached, hazelcast and benchmark results found from internet.
-1.24 Temel ROS2 ayarları
+### 1.5. Linux Servisler ve Ayarlari
 
+#### [1.5.0. SYSTEMD](./egitimler/1.5.0.SYSTEMD)
+     ayarlar ve systemctl
 
-2. Temel Java derleme egitimi 
-2.1. Jar'lar
-2.2. javac ile derleme
-2.3. ant, maven, gradle ile derleme
-2.4. runtime classpath ile derleme classpath ilişkisi
+#### [1.5.1. Temel Servisler](./egitimler/1.5.1.TemelServisler)
+     SSHD,HTTPD, NAMED, DHCPD, TFTPD, CHRONYD (chronyc sources) /NTPD (+NMA), RSYSLOGD, SENDMAIL, OPENLDAP
 
-3. Temel C/C++ derleme 
-3.1. gcc/g++ , derleme asamaları ve parametreleri (LIBRARY_PATH)
-3.2. Makefile 
-3.3 runtime LD_LIBRARY_PATH/ static ile ilişkileri
+#### [1.5.2. Veri Servisleri Ayarlari](./egitimler/1.5.2.VeriServisleriAyarlari)
+     MYSQLD, MONGOD, POSGRESQL, REDIS
 
-4. Temel Python Egitimi
+#### [1.5.3. Uygulama Sunnuculari Ayarlari](./egitimler/1.5.3.UygulamaSunnuculariAyarlari)
+     TOMCAT, GLASSFISH
 
-5. Temel Solaris Egitimi
-5.1.	Solaris OS temel komutlarý
-5.2.	Solaris Network temel komutlarý
-5.3.	Solaris sistem servisleri
-5.4.	Solaris ALOM/ ILOM ayarlarý ve kullanýmý 
+#### [1.5.4. Temel Mysql Egitimi](./egitimler/1.5.4.TemelMysqlEgitimi)
+     ( start/stop db, create/drop/show databses, show tables, privileges, import sql, basic sql : select, insert, primary key, uniq , data types, autoincrement )
 
+#### [1.5.5. Temel Postgresql Egitimi](./egitimler/1.5.5.TemelPostgresqlEgitimi)
 
+#### [1.5.6. Temel Mongo Egitimi](./egitimler/1.5.6.TemelMongoEgitimi)
 
-6. Advent 
+#### [1.5.7. Temel Redis Egitimi](./egitimler/1.5.7.TemelRedisEgitimi)
 
-6.0. Mimari 
-6.0.1 Genel sistem mimarileri ( milgem4 ve LHD tipi,  barbaros tipi, milgem5 -8 / Pakistan / Ukrayna tipi, All-in-two tipi, Akos tipi, Tek kabinet tipi, Martý tipi, Advent-Ufuk tipi, All-in-one) ( ssdn+csdn+udn(video+nrtn+maint..) ve makinelerin cizimi + GVDS + susystems + training world)
-6.0.2 GVDS'den alinan veriler ve sistemdeki zaman kontrolü.
-6.0.3 Sistem açilis sekansi
-6.0.3.1 Tüm sistem sekans :  switchler, gvds, fsular , mpular
-6.0.3.2 Bir node icindeki sekans ( Genieware , SM ve PDM ayarlari, opcon'da veya fsu/mpu.. da acilmasi)
-6.0.4 Gemideki opkon ve siuc kabinetlerinin yapisi CCS/UPS ile acilis / kapanislari
-6.0.5 Genel yazilim mimarisi , kütüphaneler (infra) ve iletisim, dp/ai/oi,noi... ne demek
-6.0.6 Hangi makinede hangi uygulamalar kosmaktadir. (fsu, mpu, nrts, dsu, gsu, opcon, ccs, video server, )
-6.0.7 fdm'de tutulan bilgiler ( resource files ...)
-6.0.8 veri kayit altyapisi (mongo vs.) ve replay kullanicisi
-6.0.9 training world yapisi
-6.0.10 multilink ag yapisi
-6.0.11 nec ag yapisi
+#### [1.5.8. Temel Mesajlasma Sistemleri](./egitimler/1.5.8.TemelMesajlasmaSistemleri)
+     DDS, Kafka+config, Dbus 
 
-6.1.  Kurulumu 
-6.1.1.  Ards (dhcp, dns, profiles/Disk Partitioning, uefi)
-6.1.2.  Yum repo
-6.1.3.  Ansible config
-6.1.2.  Hardware ayarlarý : network pci bus, ekran pci bus, pdk ve normal ekran için xorg ayarlarý, nvidia driver kurulumu,  hardware deðiþiklikleri gözlemleme  (dmesg, /var/log/messages)
+### [1.6. Linux Boot](./egitimler/1.6.LinuxBoot)
+     dracut, moduller, vmlinuz, initrd, grub config, boot parameters, pxe boot, bios, uefi
 
-6.2.  Kullanimi 
-6.2.1.  simülaötlerden basit bir senaryo baslatma 
-6.2.2.  track generator'den iz basma
-6.2.3.  radar-76mm basit bir angajman kurma
-6.2.4.  training world
-6.2.5.  replay ile yeniden oynatma
-6.2.6.  local data'da tutulan bilgiler (video / resim ..), desktop recording, opcon-video-recording
-6.2.7.  veri analiz calistirma
-6.2.8.  basit bir multilink testi
-6.2.9.  basit bir nec testi
+### 1.7. Temel Linux Donanim Komutlari
 
-6.3. Izleme 
-6.3.1 Genieware çalýþma prensibi ve loglarýn incelenmesi
-6.3.1.1 Genieware Browser kullanýmý
-6.3.2 PDM ayarlarý ve içerik kontrolleri, güncelleme ve yeniden yükleme.
-6.3.3 SM seviyesi uygulamalar , çalýþmasý zorunlu olan yazýlým birimlerinin bulunmasý , 
-6.3.4 Uygulama loglarýnýn yeri ve nasýl okunacaðý
-6.3.5 CMMT kullanýmý
-6.3.6 Donanýmsal muhtemel hata noktalarý ve sisteme etkileri ( Bios veya cihaz pilleri, UPSler, Soðuk lehim bozukluklarý, network kablolarýnýn yanlýþ çakýlmýþ olmasý ( Genelde Aselsan ile yaþadýðýmýz problem), )
-6.3.7 Yazilimsal muhtemel hata noktalarý ve sisteme etkileri ( PDM, infogram mismatch, yazýlým sürümlerinin nodelar arasý uyumsuzluðu, )
-6.3.8 Tüm sistemin isledeginin genel kontrolü amaciyla check listesi ( Sistem login, alt sistemlere ulaþým, ölen/kalkan uygulamalarýn kontrolü, RAM iz oluþturabilme, mismatch, CDS, MongoDB, Harita, GSU'dan kurulum yapýlabilirliði ve yazýlým paketlerinin güncelliðinin kontrolü, mysql, harita, simulatorlerin calisirligi, training world calisirligi, sistemin RAM/CPU miktari)
-6.3.9 Her gemiden geliþte gemideki yazýlým sürümlerinin listesinin getirilmesi (txt) ve confluence'daki gemi günlüklerinin güncellenmesi proseduru.
+#### [1.7.1. Donanim Sorgulama Komutlari ve Ayarlari ](./egitimler/1.7.1.DonanimSorgulamaKomutlariveAyarlari)
+     dmidecode, lsusb, lspci, dmesg, /var/log/messages, /etc/udev/rules.d
 
+#### [1.7.2. Linux Kernel Modules ](./egitimler/1.7.2.LinuxKernelModules)
+     insmod,rmmod, modprobe, blacklists
 
-6.4. Troubleshooting / Hata Analizi 
-6.4.1 Loglarin yeri ve dosyalarin iclerindekiler (Advent logs: GW_LOG_DIR, OS_LOG_DIR, APP_LOG_DIR, /var/log/*, /tmp/.01*, MDR) 
-6.4.1.1 loglarin iliskisi (hangisinden sonra hangisi baslar, veya surekli bagimsiz alinanlar)
-6.4.1.2 loglarda neler aratýlacak, hangi keyword ne anlama geliyor.
-6.4.2 GISS
-6.4.3 Switch'lere baðlanma ve nodelardaki netowrk lerin bandwidth kontrolu
-6.4.4 Genieware Browser kullanýmý
-6.4.5 SM infogramlarý (nelere bakýlmalý)
-6.4.6 gemilerde PMU / PAU ile nasýl çalýþýlýr. (prosedur)
-6.4.7 gemilerde PDU ile nasýl çalýþýlýr.
-6.4.8 gemide yazilim konfigürasyonunu kontrol etmek. (CMMT/repoinfo)
-6.4.9 genel olarak ihrac gemilerde bulunmamasi gerekenler ( jar csu, scriptler kapali, sagtus xterm acilmamali (gsu haric)) 
+#### [1.7.3. Donanim ile konusma](./egitimler/1.7.3.DonanimileKonusma)
+     seriden veri okuma, minicom,
 
+#### [1.7.4. Temel Linux GUI Ayarlari ](./egitimler/1.7.4TemelLinuxGUIAyarlari)
+    ( Xorg / Xinit / Gnome / XFCE )
 
-6.5. Advent Gelistirme Süreci 
-6.5.1. Gelistirme ortamina baglanma (kullanýcý açtýrma, gateway'lere izin alma, TTE'lere paket atýp deneme)
-6.5.2 Jenkins kullanýmý
-6.5.3 Modül ekleme/çýkarma, takip etme
-6.5.4 Vatan portal (Yerine Hvl ve Arm confluence)
-6.5.5 Git süreci
-6.5.6 Geliþtirme ortamýna dosya aktarma. (internet-> intranet-> YGO)
-6.5.7 istalep.havelsan.adventygo'dan Noveth/Multilink simulatorlerinin switchlenmesi
-6.5.8 Gemi/LBTS konfigürasyon süreci ( Konfigurasyon CSU listesinin olusturulmasi , PDM'in ilk olusturulmasi)
-6.5.9 Advent Resmi Test Süreci
-   - Vasýflandýrma, FAT , HAT , SAT süreçleri
+### 1.8. Linux Debug Tools
 
+#### 1.8.1. C/CPP/Binary
 
+##### [1.8.1.1. Derleme](./egitimler/1.8.1.1.Derleme)
+      gcc/g++ , derleme asamaları ve parametreleri (LIBRARY_PATH), Makefile , runtime LD_LIBRARY_PATH/static ile iliskileri
 
-7. Genesis Kurulumu 
-7.1. Gtarget ve PXE (PMU'dan ve GSU'dan kurulumlar)
-7.2. Genesis bilesenleri
-7.3. Genesis sistem mimarileri ( Gabya, Milgem 1-2, LST,  Bazý gemilerdeki link11 konsollarý)
-7.4. Sparc / X86 / Linux iþletim sistemlerini kullanan sistemlerin belirtilmesi
-7.5. Hangi baseline'da hangi gemi var 
-7.6. Genesis tipindeki gemilerin opcon/siuc kabinet ve ccs yapýlarý ( Ayesaþ/Yaltes)
-7.7. SIU'lardaki kartlari, zaman ve platform versinin SAU'lar araciligiyla alinmasi
-7.8. SAU'lar ve SIU'lar içindeki kartlar, bunlarin pil ve diðer arýza durumlarý
-7.9. Hangi makinede hangi uygulamalar koþmaktadýr ve loðlarýna nasýl bakýlmaktadýr.
-7.10. Genieware ayarlarý ve loðlarý
-7.11. PDM ayarlarý ve içerik kontrolleri, güncelleme ve yeniden yükleme.
-7.12. SM'in çalisma prensibi (tac_s, tid, conbs, ccs, pdk, pk) 
-7.13. Sistemin açilis sekansi (tüm nodelar bazýnda, ve bir opkon/mpu/siu/nun iç iþleyiþi bazýnda)
-7.14. OpconDisplay nodelarý
-7.15 Tüm sistemin iþledeginin genel kontrolü amaciyla check listesi ( Sistem login, alt sistemlere ulaþým, ölen/kalkan uygulamalarýn kontrolü, RAM iz oluþturabilme,  mismatch, TID, MMS sunucusu ve harita, GSU'dan kurulum yapýlabilirliði ve yazýlým paketlerinin güncelliðinin kontrolü.)
-7.16. Her gemiden geliste gemideki yazýlým sürümlerinin listesinin getirilmesi (txt) ve confluence'daki gemi günlüklerinin güncellenmesi
+##### [1.8.1.2. Yapi](./egitimler/1.8.1.2.Yapi)
+      LLVM, readelf, so dosya yapisi, ldd -r, strings,
 
+##### [1.8.1.3 Debug](./egitimler/1.8.1.3.Debug)
+      GDB, STRACE, PS options, TOP options, lsof, valgrind, electricfence
+
+#### 1.8.2. Java
+
+##### [1.8.2.1. Derleme](./egitimler/1.8.2.1.Derleme)
+      javac, ant, maven, gradle 
+
+##### [1.8.2.2. Yapi](./egitimler/1.8.2.2.Yapi)
+      JAR, minor-major hatasi, runtime classpath ve derleme classpath ile iliskisi, java -jar calistirma, CLASSPATH,  java -jar ile clistirma, LD_LIBRARY_PATH, -Djava.library.path, -Xmx, -Xms, ...
+
+##### [1.8.2.3. Debug](./egitimler/1.8.2.3.Debug)
+     JMissionControl, JVisualVM, Java Health Center, JDB, JMX
+
+### [1.9. Temel Ansible Egitimi](./egitimler/1.9.TemelAnsibleEgitimi)
+
+### [1.10. Temel Docker Egitimi](./egitimler/1.10.TemelDockerEgitimi)
+
+### [1.11. Temel Video Komutlari](./egitimler/1.11.TemelVideoKomutlari)
+     vlc, ffmpeg, gstreamer (gemide kullanım örnekleri avss/tvgs)
+
+### [1.12. Temel Bash Script Egitimi](./egitimler/1.12.TemelBashScriptEgitimi)
+
+### [1.13. Temel Python Egitimi](./egitimler/1.13.TemelPythonEgitimi)
+
+## [2. Temel VMWare ESX Egitimi ](./egitimler/2.TemelVMWareESXEgitimi)
+      (sanal makine,kurulum, switch konfigürasyonu, e1000e)
+
+## 3. Temel Solaris Egitimi
+
+### [3.1. Solaris OS Temel Komutlari](./egitimler/3.1.SolarisOSTemelKomutlari)
+
+### [3.2. Solaris OS Temel Network komutlari](./egitimler/3.2.SolarisOSTemelNetworkKomutlari)
+
+### [3.3. Solaris sistem servisleri](./egitimler/3.3.SolarisSistemServisleri)
+
+### [3.4. ALOM/ILOM ayarlari ve kullanimi](./egitimler/3.4.ALOM_ILOMAyarlariVeKullanimi)
 
 
 
